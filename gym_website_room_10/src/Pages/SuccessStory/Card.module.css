@@ -1,0 +1,63 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.main{
+    
+    color: rgb(104, 62, 62);
+}
+.para{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: medium;
+}
+.container{
+    border:1px solid black;
+    box-shadow: 5px 3px 5px black;
+    width:250px;
+    margin:20px;
+    background-color: rgb(65, 39, 38);
+    border-style: none;
+    border-radius: 2px;
+}
+.image img{
+    width:250px;
+
+}
+ .button{
+    display:flex;
+    justify-content: space-around;
+ }
+
+button{
+    border:1px solid black;
+    font-size: medium;
+    border-style: none;
+    background-color: rgb(117, 80, 10);
+    border-radius: 2px;
+    margin-top:-25px;
+    color:rgb(241, 241, 194);
+    box-shadow:2px 3px 5px 2px;
+
+}
+.card_title {
+    text-align: center;
+    margin:0;
+    padding:10px;
+    color: aliceblue;
+}
+.description{
+    text-align: center;
+    margin:0;
+    padding:10px;
+    font-size: 12px;
+}
+.story{
+    align-items: center;
+    margin-left: 25px;
+    padding: 5px 5px 5px 5px;
+    font-size: larger;
+    width: 15rem;
+    box-shadow:2px 3px 5px 2px;
+    border-radius: 5px;
+}

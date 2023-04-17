@@ -1,0 +1,49 @@
+.main_section {
+  display: flex;
+  justify-content: center;
+  height: 90%;
+  width: 80%;
+  margin:  0   20px ;
+  border: 1px solid black;
+  background-color: rgb(68, 60, 60);
+  
+  
+}
+
+
+
+
+ .main_section>h1,
+h3,h2 {
+  color: white;
+  margin: 30px 0 20px 20px;
+ 
+}
+
+.main_section  {
+  margin-top: 20px;
+}
+
+.image {
+  width: 50%;
+ 
+  
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.left_section {
+  width: 50%;
+  padding-left: 20px;
+  height: 100%;
+
+}
+
+
+.main_container{
+  margin-left: 20%;
+  height: 80vh;
+}

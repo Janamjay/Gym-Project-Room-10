@@ -1,5 +1,9 @@
+*{
+    margin:0px;
+    padding:0px;
+}
 .main{
-  
+    
     color: rgb(104, 62, 62);
 }
 .para{

@@ -4,7 +4,7 @@ import image1 from "../../images/image-1.png";
 
 export default function MiddleSection() {
   return (
-    <div>
+    <div className={styles.main_container}>
       <div className={styles.main_section}>
         <div className={styles.left_section}>
           <h1>Facts</h1>
@@ -18,6 +18,6 @@ export default function MiddleSection() {
           <img src={image1} alt="displaying"></img>
         </div>
       </div>
-    </div>
+     </div>
   );
 }

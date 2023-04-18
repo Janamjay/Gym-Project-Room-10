@@ -7,7 +7,7 @@ import Navbar from "./Navbar/Navbar";
 import Card from "./Pages/SuccessStory/Card";
 
 import Classes from "./Pages/Classes/Classes";
-import Blog from "./Pages/Blog/Blog";
+
 function App() {
   return (
     <>
@@ -17,9 +17,8 @@ function App() {
         <Route path="/about" Component={About} />
         <Route path="/contact" Component={Contact} />
         <Route path="/classes" Component={Classes} />
-        <Route path="/blog" Component={Blog} />
+        <Route path="/success" Component={Card} />
       </Routes>
-      <Card />
     </>
   );
 }

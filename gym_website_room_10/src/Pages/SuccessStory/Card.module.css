@@ -3,7 +3,11 @@
     padding:0px;
 }
 .main{
+    
     color: rgb(104, 62, 62);
+    display: flex;
+    flex-wrap: wrap;
+   
 }
 .para{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -11,24 +15,35 @@
     font-size: medium;
 }
 .container{
+     width:19%;
+    display: flex;
+    flex-wrap: wrap;
     border:1px solid black;
     box-shadow: 5px 3px 5px black;
-    width:250px;
     margin:20px;
     background-color: rgb(65, 39, 38);
     border-style: none;
     border-radius: 2px;
-}
-.image img{
-    width:250px;
+    box-sizing: border-box;
+    padding-left: 5px;
 
 }
+   
+   
+
+
+.image img{
+    width:235px;
+    
+
+}
+
  .button{
     display:flex;
     justify-content: space-around;
  }
 
-.btn{
+.button{
     border:1px solid black;
     font-size: medium;
     border-style: none;
@@ -37,7 +52,6 @@
     margin-top:-25px;
     color:rgb(241, 241, 194);
     box-shadow:2px 3px 5px 2px;
-
 }
 .card_title {
     text-align: center;
@@ -53,10 +67,47 @@
 }
 .story{
     align-items: center;
-    margin-left: 25px;
+    margin-left: -3px;
     padding: 5px 5px 5px 5px;
     font-size: larger;
     width: 15rem;
     box-shadow:2px 3px 5px 2px;
     border-radius: 5px;
+    background-color: rgb(243, 185, 185);
 }
+
+.before{
+    border:1px solid black;
+    font-size: medium;
+    border-style: none;
+    background-color: rgb(117, 80, 10);
+    border-radius: 2px;
+    width: 3rem;
+
+    color:rgb(241, 241, 194);
+    box-shadow:2px 3px 5px 2px;
+}
+.after{
+    border:1px solid black;
+    font-size: medium;
+    border-style: none;
+    background-color: rgb(117, 80, 10);
+    border-radius: 2px;
+    width: 3rem;
+    color:rgb(241, 241, 194);
+    box-shadow:2px 3px 5px 2px;
+}
+.mainBody{
+ border: 1px solid black;
+ border-style: none;
+ display: flex;
+ flex-wrap: wrap;
+ height:50%;
+ padding-left:80px;
+ background-color: white;
+ box-shadow: 5px 3px 5px 2px;
+ width:100%;
+ 
+}
+
+

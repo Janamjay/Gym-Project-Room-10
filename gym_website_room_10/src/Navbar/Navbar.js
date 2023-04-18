@@ -27,7 +27,7 @@ export default function Navbar() {
             <Link to="/classes">Classes</Link>
           </li>
           <li className={nav.common}>
-            <Link to="/blog">Blog</Link>
+            <Link to="/success">Success Story</Link>
           </li>
           <li className={nav.common}>
             <Link to="/contact">Contact</Link>

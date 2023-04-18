@@ -12,7 +12,7 @@ export default function Card() {
         </p>
         <div className={Styles.container}>
             <div className={Styles.image}>
-               <img src ="./images/img1.jpg"/>
+               <img src ="./images/img1.jpg" alt='pic'/>
                <div className={Styles.button}>
                <button>Before</button>
            <button>After</button>

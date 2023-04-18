@@ -95,13 +95,10 @@
  flex-wrap: wrap;
  height:50%;
  padding-left:80px;
- background-color: gray;
+ background-color: white;
  box-shadow: 5px 3px 5px 2px;
  width:100%;
  
 }
 
 
-@media (max-width:500px){
-   
-}

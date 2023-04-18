@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./MiddleSection.module.css";
-import image1 from "../../../images/image1.png";
+import image1 from "../../../component/images/image1.png";
 
 export default function MiddleSection() {
   return (

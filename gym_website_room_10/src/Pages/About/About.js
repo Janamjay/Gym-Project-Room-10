@@ -8,9 +8,7 @@ export default function About() {
     <div>
       <Headings />
       <MiddleSection />
-      <BottomSection />
-
-      <h1>This is about page</h1>
+      <BottomSection />  
     </div>
   );
 }

@@ -62,6 +62,7 @@ export default function Card() {
     <div className={Styles.main}>
       <h1>REAL PEOPLE .REAL SUCCESS STORY</h1>
       <hr></hr>
+      <hr></hr>
       <p className={Styles.para}>
         Powered by a transformative bussiness model,propretary technology,tried
         and tested methodology,and tested methodology ,and some of the best

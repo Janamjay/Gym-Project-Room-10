@@ -1,0 +1,57 @@
+@media (max-width: 500px) {
+  .main_heading h1 {
+    font-size: 28px;
+  }
+  .mainn_heading p {
+    font-size: 16px;
+  }
+
+.main_heading h1 {
+  padding-top: 5%;
+  width: 100%;
+  box-sizing: border-box;
+  
+}
+
+.main_heading p {
+  margin: 20px 0;
+  
+}
+
+.main_heading{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+}
+
+@media  (max-width: 900px) 
+/* this is tablet view */
+
+{
+  .main_heading h1 {
+    font-size: 24px;
+  }
+  .main_heading p {
+    font-size: 14px;
+  }
+  .main_heading h1 {
+    padding-top: 5%;
+
+  }
+  
+  .main_heading p {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    margin: 20px 0;
+}
+
+.main_heading{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 110px ;
+  
+ 
+
+}
+}

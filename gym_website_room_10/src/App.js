@@ -6,7 +6,10 @@ import Contact from "./Pages/Contact/Contact";
 import Card from "./Pages/SuccessStory/Card";
 import Navbar from './component/Navbar/Navbar'
 import Classes from "./Pages/Classes/Classes";
+
+import Footer from "./component/Footer/Footer";
 import Backround from "./component/backround/Backround";
+
 
 function App() {
   return (
@@ -20,6 +23,7 @@ function App() {
         <Route path="/classes" Component={Classes} />
         <Route path="/success" Component={Card} />
       </Routes>
+      <Footer/>
     </>
   );
 }

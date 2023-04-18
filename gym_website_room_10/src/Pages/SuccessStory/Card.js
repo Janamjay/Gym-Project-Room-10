@@ -75,10 +75,12 @@ export default function Card() {
                   <div className={Styles.before}>{item.before}</div>
                   <div className={Styles.after}>{item.after}</div>
                 </div>
-                <div className={Styles.card_title}>
-                  <h3>{item.name}</h3>
-                  <div className={Styles.description}>
-                    <p>{item.description}</p>
+                <div className={Styles.desc}>
+                  <div className={Styles.card_title}>
+                    <h3>{item.name}</h3>
+                    <div className={Styles.description}>
+                      <p>{item.description}</p>
+                    </div>
                   </div>
                 </div>
                 <button className={Styles.story}>
@@ -94,5 +96,6 @@ export default function Card() {
         })}
       </div>
     </div>
-  );
+
+  )
 }

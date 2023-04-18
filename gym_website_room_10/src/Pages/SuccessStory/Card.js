@@ -1,11 +1,11 @@
 import React from "react";
 import Styles from "./Card.module.css";
 import { FiPlay } from "react-icons/fi";
+import mary from "../../images/img1.png";
 export default function Card() {
   const Data = [
     {
       id: "1",
-      src: "./images/img1.jpg",
       before: "Before",
       after: "After",
       name: "Marry",
@@ -14,7 +14,6 @@ export default function Card() {
     },
     {
       id: "1",
-      src: "./images/img1.jpg",
       before: "Before",
       after: "After",
       name: "Marry",
@@ -23,7 +22,6 @@ export default function Card() {
     },
     {
       id: "1",
-      src: "./images/img1.jpg",
       before: "Before",
       after: "After",
       name: "Marry",
@@ -32,7 +30,7 @@ export default function Card() {
     },
     {
       id: "1",
-      src: "./images/img1.jpg",
+
       before: "Before",
       after: "After",
       name: "Marry",
@@ -41,7 +39,6 @@ export default function Card() {
     },
     {
       id: "1",
-      src: "./images/img1.jpg",
       before: "Before",
       after: "After",
       name: "Marry",
@@ -50,7 +47,6 @@ export default function Card() {
     },
     {
       id: "1",
-      src: "./images/img1.jpg",
       before: "Before",
       after: "After",
       name: "Marry",
@@ -74,7 +70,7 @@ export default function Card() {
           return (
             <div className={Styles.container}>
               <div className={Styles.image}>
-                <img src={item.src} />
+                <img src={mary} alt="mary" />
                 <div className={Styles.button}>
                   <div className={Styles.before}>{item.before}</div>
                   <div className={Styles.after}>{item.after}</div>
@@ -86,7 +82,11 @@ export default function Card() {
                   </div>
                 </div>
                 <button className={Styles.story}>
-                  {item.story} <FiPlay />
+                  {item.story}
+                  <span>
+                    {" "}
+                    <FiPlay />
+                  </span>
                 </button>
               </div>
             </div>

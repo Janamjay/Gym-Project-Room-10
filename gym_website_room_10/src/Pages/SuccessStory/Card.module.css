@@ -3,8 +3,7 @@
     padding:0px;
 }
 .main{
-    position: absolute;
-    z-index: 0;
+    
     color: rgb(104, 62, 62);
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +43,16 @@
     justify-content: space-around;
  }
 
-
+.button{
+    border:1px solid black;
+    font-size: medium;
+    border-style: none;
+    background-color: rgb(117, 80, 10);
+    border-radius: 2px;
+    margin-top:-25px;
+    color:rgb(241, 241, 194);
+    box-shadow:2px 3px 5px 2px;
+}
 .card_title {
     text-align: center;
     margin:0;
@@ -67,6 +75,7 @@
     border-radius: 5px;
     background-color: rgb(243, 185, 185);
 }
+
 .before{
     border:1px solid black;
     font-size: medium;

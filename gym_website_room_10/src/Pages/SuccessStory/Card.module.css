@@ -109,5 +109,63 @@
  width:100%;
  
 }
+ @media screen and (max-width:500px){
+    .mainBody{
+      display: block;  
+
+      
+    }
+    .container{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+ .image{
 
 
+ }
+}
+
+@media screen and (max-width:900px){
+    .main{
+        margin-left:10rem;
+        margin-right:20rem;
+    }
+    .mainBody{
+       width:80%;
+       padding-left: 0px;
+       box-sizing: border-box;
+       margin-left:35px;
+       box-shadow: none;
+       display: block;
+     
+       
+    }
+    .container{
+     display: block;
+     width:100%;
+     padding:0 12rem;
+     
+      
+    }
+    .image{
+        width: 30%;
+    }
+    .before{
+       margin-left:180px;
+       
+      
+
+    }
+   .after{
+    margin-left: 5rem;
+    
+   }
+
+   .card_title{
+    margin-left: 50px;
+    margin-right:10px;
+   }
+    
+} 

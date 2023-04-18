@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./MiddleSection.module.css";
-import image1 from "../../images/image-1.png";
+import image1 from "../../../images/image1.png";
 
 export default function MiddleSection() {
   return (
@@ -19,9 +19,6 @@ export default function MiddleSection() {
 
           <h1>Facts</h1>
           <h3>Fitness Club Client's Muscle stretch to Date</h3>
-
-          <h1>Facts</h1>
-          <h3>Fitness Club Client's Muscle return to original length after streching to Date</h3>
         </div>
         <div className={styles.image}>
           <img src={image1} alt="displaying"></img>

@@ -3,7 +3,6 @@
     padding:0px;
 }
 .main{
-    
     color: rgb(104, 62, 62);
 }
 .para{
@@ -29,7 +28,7 @@
     justify-content: space-around;
  }
 
-button{
+.btn{
     border:1px solid black;
     font-size: medium;
     border-style: none;

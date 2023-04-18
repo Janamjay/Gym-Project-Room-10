@@ -7,6 +7,7 @@ import Navbar from "./Navbar/Navbar";
 import Card from "./Pages/SuccessStory/Card";
 
 import Classes from "./Pages/Classes/Classes";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/classes" Component={Classes} />
         <Route path="/success" Component={Card} />
       </Routes>
+      <Footer/>
     </>
   );
 }

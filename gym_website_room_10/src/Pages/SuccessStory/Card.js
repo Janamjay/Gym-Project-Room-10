@@ -1,7 +1,7 @@
 import React from "react";
 import Styles from "./Card.module.css";
 import { FiPlay } from "react-icons/fi";
-import mary from "../../images/img1.png";
+import mary from "../../component/images/img1.png";
 export default function Card() {
   const Data = [
     {

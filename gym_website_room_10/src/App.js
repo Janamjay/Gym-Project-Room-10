@@ -3,16 +3,19 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
-import Navbar from "./Navbar/Navbar";
 import Card from "./Pages/SuccessStory/Card";
-
+import Navbar from './component/Navbar/Navbar'
 import Classes from "./Pages/Classes/Classes";
-import Footer from "./Footer/Footer";
+
+import Footer from "./component/Footer/Footer";
+import Backround from "./component/backround/Backround";
+
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar/>
+      <Backround/>
       <Routes>
         <Route path="/" Component={Home} />
         <Route path="/about" Component={About} />

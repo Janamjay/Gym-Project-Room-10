@@ -31,7 +31,7 @@ export default function Card() {
       story: "Marry's story",
     },
     {
-      id: "1",
+      id: "2",
 
       before: "Before",
       after: "After",
@@ -40,7 +40,7 @@ export default function Card() {
       story: "Marry's story",
     },
     {
-      id: "1",
+      id: "3",
       before: "Before",
       after: "After",
       name: "Marry",

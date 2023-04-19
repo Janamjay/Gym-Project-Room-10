@@ -1,17 +1,17 @@
 import React from 'react'
-import back from "../images/back.jpg";
 import bg from './back.module.css'
 import CustomButton from "../atom/customButtons/CustomButton";
 
-export default function Backround() {
+
+export default function Background(props) {
   return (
     <div>
       <div className={bg.background}>
-        <img src={back} alt="bgimage" />
+        <img src={props.url} alt="bgimage" />
       </div>
       <div className={bg.content}>
-        <h1>Online Personal Training</h1>
-        <p>Maximum Results in Minimum Time, no matter your location</p>
+        <h1>{props.heading}</h1>
+        <p>{props.desc}</p>
         <p>
           <CustomButton btntxt="Select Your Plan" style={bg.btnselect} />
         </p>

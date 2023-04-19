@@ -2,21 +2,31 @@
   width:100%;
   padding-block: 1.5rem;
   position: relative;
+  
 }
 .footer_box{
-    width: 80%;
-    margin :0 auto;
+    width: 100%;
+    margin: 0 auto;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     gap:3 rem;
-
+    color:white;
+    box-shadow: 2px 1px 3px 1px;
+    height:15rem;
+    padding-top: 3rem;
+    background-color: rgb(22, 21, 20);
 }
 .footer_social{
     display: flex;
     gap:1.3 rem;
     font-size: 1.5rem;
     align-items: center;
+    margin-top: 1rem;
+}
+.content{
+    font-size: small;
+    margin-left: -4rem;
 }
 .footer_social li{
     padding: .2rem;
@@ -30,37 +40,50 @@
     color:red;
   
 }
-.subscribe{
-    width:100%;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: -8rem;
-    margin-left: 8rem;
+.footer_box h4{
+    color: red;
 }
 
-.subscribe_box input{
-    background-color:gray;
-    border:none;
-    border-radius: 2rem;
-    height:60%;
-    width:90%;
-    margin-top: 2rem;
-    margin-right: 3rem;
+@media screen and (max-width: 600px) {
+    .footer_box {
+    width: 100%;
+    flex-direction: column;
+    align-items:self-start;
+    height: 30rem;
+    }
     
-
-}
-.subscribe_box input::placeholder{
-    background-color: gray;
-    border-radius: 2rem;
-    color: aliceblue;
-}
-.footer_box_send{
-    cursor: pointer;
-    font-size: 2rem;
-}
-.logo {
-    margin: 10px 0;
-    padding: 0px;
-    width: 20%;
-    height:15%;
-  }
+    .footer_box > * {
+    margin-top: 1rem;
+    }
+    
+    .footer_social {
+    margin-top: 0.5rem;
+    justify-content: center;
+    }
+    
+    .content {
+    margin-left: 0;
+    text-align: center;
+    }
+    .media{
+     display: flex;
+     flex-direction: column;
+     width:100%;
+     align-items: center;
+     justify-content: center;
+    }
+    .footer_box_discover h1{
+        display: flex;
+        justify-content: center;
+    }
+    .footer_box_helpCenter h1{
+        display: flex;
+        justify-content: center; 
+    }
+   
+    }
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+        .footer_box{
+            width:95%;
+        }
+    }

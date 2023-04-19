@@ -1,0 +1,40 @@
+.Account{
+    list-style-type:none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: auto;
+}
+ 
+.Account li:hover{
+    background-color: grey;
+    color: red;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .AccountMain{
+        width:100vw;
+    }
+   
+    .Account {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        padding: 0;
+    }
+    
+    .Account li {
+     flex: 1 1 50%; 
+     text-align: center; 
+    margin-bottom: 0.5rem;
+    }
+    
+    .Account li:hover {
+    background-color: grey;
+    color: red;
+    cursor: pointer;
+    }
+    }

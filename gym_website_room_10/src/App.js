@@ -6,8 +6,9 @@ import Contact from "./Pages/Contact/Contact";
 import Card from "./Pages/SuccessStory/Card";
 import Navbar from './component/Navbar/Navbar'
 import Classes from "./Pages/Classes/Classes";
-
 import Footer from "./component/Footer/Footer";
+import SignUp from "./component/form/login/Signup";
+import Login from "./component/form/login/Login";
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
         <Route path="/" Component={Home} />
         <Route path="/about" Component={About} />
         <Route path="/contact" Component={Contact} />
+        <Route path="/login" Component={Login} />
+        <Route path="/signup" Component={SignUp} />
         <Route path="/classes" Component={Classes} />
         <Route path="/success" Component={Card} />
       </Routes>

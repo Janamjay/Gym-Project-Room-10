@@ -19,7 +19,7 @@ export default function Footer() {
           <h1>Fitness Trainer</h1>
           <hr></hr>
           <h4>Best Fitness club</h4>
-          
+
           <div className={Styles.content}>
             <p>Lorem ipsum dolor sit amet</p>
             <p>consectetuer adipiscing elit</p>
@@ -44,21 +44,18 @@ export default function Footer() {
               </li>
             </div>
           </div>
-         
-            </div>
-            <div className={Styles.footer_box_discover}>
-            <h1>Fitness Information</h1>
-            <hr></hr>
-            <Fitness />
-            </div>
-        
-          <div className={Styles.footer_box_helpCenter }>
-            <h1>My Account</h1>
-            <hr></hr>
-            <Account />
-          </div>
+        </div>
+        <div className={Styles.footer_box_discover}>
+          <h1>Fitness Information</h1>
+          <hr></hr>
+          <Fitness />
+        </div>
+        <div className={Styles.footer_box_helpCenter}>
+          <h1>My Account</h1>
+          <hr></hr>
+          <Account />
         </div>
       </div>
-    
+    </div>
   );
 }

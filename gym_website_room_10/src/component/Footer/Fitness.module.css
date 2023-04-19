@@ -8,7 +8,7 @@
     
 }
 .fitness li:hover{
-    background-color: grey;
+    
     color: red;
     cursor: pointer;
 }

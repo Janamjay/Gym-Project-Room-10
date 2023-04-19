@@ -2,6 +2,8 @@ import React from "react";
 import Styles from "./Card.module.css";
 import { FiPlay } from "react-icons/fi";
 import mary from "../../component/images/img1.png";
+import Background from "../../component/backround/Background";
+import success from '../../component/images/succes.jpg'
 export default function Card() {
   const Data = [
     {
@@ -55,6 +57,12 @@ export default function Card() {
     },
   ];
   return (
+    <>
+    <Background
+        url={success}
+        heading="Success Story"
+        desc="Stories From Ours Members You can be also One of them."
+      />
     <div className={Styles.main}>
       <h1>REAL PEOPLE .REAL SUCCESS STORY</h1>
       <hr></hr>
@@ -68,7 +76,7 @@ export default function Card() {
       <div className={Styles.mainBody}>
         {Data.map((item) => {
           return (
-            <div className={Styles.container}>
+            <div key={item} className={Styles.container}>
               <div className={Styles.image}>
                 <img src={mary} alt="mary" />
                 <div className={Styles.button}>
@@ -96,5 +104,6 @@ export default function Card() {
         })}
       </div>
     </div>
-  );
+</>
+  )
 }

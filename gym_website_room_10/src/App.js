@@ -8,14 +8,12 @@ import Navbar from './component/Navbar/Navbar'
 import Classes from "./Pages/Classes/Classes";
 
 import Footer from "./component/Footer/Footer";
-import Backround from "./component/backround/Backround";
 
 
 function App() {
   return (
     <>
       <Navbar/>
-      <Backround/>
       <Routes>
         <Route path="/" Component={Home} />
         <Route path="/about" Component={About} />

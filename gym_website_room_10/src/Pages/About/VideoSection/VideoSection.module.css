@@ -35,11 +35,11 @@
     .video_section {
       width: 100%;
       padding-top: 56.25%;
-      position: relative;
+     
     }
   
     .video_section > div {
-      position: absolute;
+     
       top: 0;
       left: 0;
     }
@@ -55,18 +55,29 @@
       margin: 60px;
       box-sizing: border-box;
     }
+
+   
   
     .videoContent,
     .video_section {
-      width: 100%;
-      padding: 20px ;
+      width: 90%;
+      padding: 0 140px  10px 10px ;
+      font-size: 10px;
+      box-sizing: border-box;
+      height: auto;
+
+     
     }
+
+    
 
     
     .video_section > div {
       top: 0;
       left: 0;
+      width: 80%;
     }
+
   } 
   
 

@@ -26,19 +26,12 @@
     border-radius: 2px;
     box-sizing: border-box;
     padding-left: 5px;
-
 }
-   
-   
-
 
 .image img{
     width:235px;
-    
-
 }
-
- .button{
+.button{
     display:flex;
     justify-content: space-around;
  }
@@ -109,63 +102,73 @@
  width:100%;
  
 }
- @media screen and (max-width:500px){
-    .mainBody{
-      display: block;  
-
-      
+@media screen and (max-width: 600px) {
+    .main {
+    display: block;
+    margin-left: -1rem;
     }
-    .container{
-        width:100%;
+    
+    .container {
+        width: 88%;
+        margin-left: 8px
+    }
+    
+    .image img {
+        width: 100%;
+    margin-left: 0rem;
+    }
+    
+    .button {
+    margin-top: 10px;
+    }
+    
+    .mainBody {
+    padding-left: 20px;
+    }
+    .story{
+        
+        margin-left: 52px
+    }
+    
+    }
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+        .main {
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
- .image{
+        flex-wrap: wrap;
 
-
- }
-}
-
-@media screen and (max-width:900px){
-    .main{
-        margin-left:10rem;
-        margin-right:20rem;
-    }
-    .mainBody{
-       width:80%;
-       padding-left: 0px;
-       box-sizing: border-box;
-       margin-left:35px;
-       box-shadow: none;
-       display: block;
-     
-       
-    }
-    .container{
-     display: block;
-     width:100%;
-     padding:0 12rem;
-     
-      
-    }
-    .image{
-        width: 30%;
-    }
-    .before{
-       margin-left:180px;
-       
-      
-
-    }
-   .after{
-    margin-left: 5rem;
+        }
+        .main h1{
+           
+            margin-left:3rem;
+        }
+        .para{
+            margin-left:2rem;
+            margin-right: 3rem;
+        }
+        
+        .container {
+        margin: 10px;
+        width:40%;
+        }
+        
+        .image img {
+        width: 100%;
+        }
+        
+        .button {
+        margin-top: 10px;
+        
+        }
+       .story{
     
-   }
+        margin-left: 17px;
+       }
+       .image img {
+        width: 100%;
+        margin-left: -0.5 rem;
+    }
+        .mainBody {
+          width:100vw;
+        }
 
-   .card_title{
-    margin-left: 50px;
-    margin-right:10px;
-   }
-    
-} 
+        }

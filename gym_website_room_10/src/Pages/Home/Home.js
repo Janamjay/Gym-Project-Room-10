@@ -5,6 +5,7 @@ import back from "../../component/images/back.jpg";
 import BMI from './bmi/BMI';
 import Expert from './expert/Expert';
 import Price from './price/Price';
+import Clientstories from './client stories/Clientstories';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <BMI/>
       <Expert/>
       <Price/>
+      <Clientstories/>
     </div>
   )
 }

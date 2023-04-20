@@ -24,6 +24,13 @@ export default function Classes() {
       name: "karan",
       time: "Friday 10:00 AM",
     },
+    {
+      id: "4",
+      title: "Power Lifting",
+      name: "karan",
+      time: "Friday 10:00 AM",
+    },
+ 
   ];
   return (
     <div>

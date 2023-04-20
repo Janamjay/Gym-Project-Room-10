@@ -1,7 +1,11 @@
 .class{
-    align-content: center;
+    align-items: center;
     font-size: larger;
     background-color: beige;
+}
+.class p{
+    
+    text-align: center;
 }
 .class h1{
     display: flex;
@@ -102,12 +106,11 @@ h4{
         flex-direction: column;
     }
     
-   
-    
-   
-    
-   
-    
-   
-    
 }
+    
+   
+    
+   
+    
+   
+    

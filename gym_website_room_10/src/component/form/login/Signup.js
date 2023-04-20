@@ -58,7 +58,6 @@ export default function SignUp() {
         url={signup}
         heading="SIGNUP PAGE"
         desc="SIGNUP WITH US CONNECT TO US"
-      />
       <div className={style.wrap}>
         <h3>Signup Page</h3>
         <CustomInput
@@ -90,6 +89,9 @@ export default function SignUp() {
         <p>
           Already registered? <Link to="/login">Login</Link>
         </p>
+      </div>
+        <CustomButton style={style.button} onClick={handleSignUp} btntxt="SignUp" />
+        <p>Already registered? <Link to="/login"> Login</Link></p>
       </div>
     </>
   );

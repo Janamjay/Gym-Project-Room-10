@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+ import React, { useEffect, useState } from "react";
 import CustomInput from "../../atom/customInputs/CustomInput";
 import CustomButton from "../../atom/customButtons/CustomButton";
 import style from "./Login.module.css";

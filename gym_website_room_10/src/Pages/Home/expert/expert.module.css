@@ -63,3 +63,15 @@
 	bottom: 10%;
 	opacity: 1;
 }
+
+
+@media(max-width:600px){
+	.main_container{
+		display: none;
+	}
+}
+@media(max-width:900px){
+	.main_container{
+		display: none;
+	}
+}

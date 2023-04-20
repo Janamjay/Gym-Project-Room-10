@@ -3,7 +3,6 @@
   width: 100%;
   background-color: gainsboro;
   margin-top: 3rem;
-  
 }
 
 .content img {
@@ -11,7 +10,7 @@
 }
 
 .content h1 {
-  padding: 20px;
+  padding:  0 30px;
 }
 
 .image {
@@ -30,16 +29,19 @@
   margin-top: 5%;
   align-items: center;
   text-align: center;
-  padding-top: 20%;
+  padding-top: 10%;
 }
 
-@media (max-width: 500px)
+
 /* for mobileview */
 
-{
+@media (max-width: 500px)  {
   .content {
     flex-direction: column;
     margin-top: 40rem;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
   }
 
   .image,
@@ -48,7 +50,12 @@
   }
 
   .image img {
-    padding: 10px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 90%;
+    padding: 0 30px 0 30px;
   }
 
   .image_heading h1 {
@@ -57,31 +64,29 @@
 }
 
 
-@media  (max-width: 900px)  {
+
+
+
+/* 
+this is tab view */
+
+@media (max-width: 900px) {
   .content {
     flex-direction: column;
-    margin-top: 20rem ;
-   padding: 0  60px 10px 20px ;
-   box-sizing: border-box;
+    margin-top: 20rem;
+    padding: 0 60px 10px 20px;
+    box-sizing: border-box;
   }
 
   .image,
   .image_heading {
-    width: 100%;
+    width: 90%;
     box-sizing: border-box;
-    padding: 10%;
-
-  }
-
-  .image img {
-    margin: 70px;
+     
   }
 
   .image_heading h1 {
-    padding: 0% 5% 5x 5%;
-    border: 1px solid black;
+    padding: 30px;
+    
   }
-
-  
-
 }

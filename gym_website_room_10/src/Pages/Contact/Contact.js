@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Contact.module.css";
 import Background from "../../component/backround/Background";
-import ctn from '../../component/images/gym.jpg'
+import ctn from "../../component/images/gym.jpg";
 
 export default function Contact() {
   return (
@@ -11,18 +11,18 @@ export default function Contact() {
         heading="Contact Us"
         desc="Contact us to Know the plans ."
       />
+
       <div className={styles.parent}>
-        <div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30014.915208003073!2d75.31805981083986!3d19.8879469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba3d15bc6652f%3A0xb44413a328dcb453!2sFitness%20Trainer!5e0!3m2!1sen!2sin!4v1681766063489!5m2!1sen!2sin"
-            width="100%"
-            height="600"
-            style={{ border: "0" }}
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.8642819412785!2d75.35153377406608!3d19.887951925983756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdba3d15bc6652f%3A0xb44413a328dcb453!2sFitness%20Trainer!5e0!3m2!1sen!2sin!4v1681972558184!5m2!1sen!2sin"
+          width="100%"
+          height="600"
+          style={{ border: "0" }}
+          allowFullScreen=""
+          loading="lazy"
+          title="addressgym"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
         <div className={styles.main_container}>
           <div className={styles.first_container}>
             <h1>Get In Touch</h1>

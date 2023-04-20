@@ -45,7 +45,7 @@ export default function SignUp() {
       
       localStorage.setItem('userData', JSON.stringify([...localStorageData, userInfo])) 
       alert('Succesfully Registered!!')
-      navigate('/login')
+      navigate('/')
     }
      else {
       alert('Please enter valid details');

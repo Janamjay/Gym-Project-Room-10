@@ -24,10 +24,10 @@ function App() {
     <>
       <Navbar/>
       <Routes>
-        <Route path="/" Component={Home} />
+        <Route path="/" Component={Login} />
         <Route path="/about" Component={About} />
         <Route path="/contact" Component={Contact} />
-        <Route path="/login" Component={Login} />
+        <Route path="/home" Component={Home} />
         <Route path="/signup" Component={SignUp} />
         <Route path="/classes" Component={Classes} />
         <Route path="/success" Component={Card} />

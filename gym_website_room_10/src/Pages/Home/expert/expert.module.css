@@ -63,19 +63,15 @@
 	bottom: 10%;
 	opacity: 1;
 }
-@media screen and (min-width: 601px) and (max-width: 1024px){
-	.row{
-		display: flex;
-		flex-direction: column;
-		width:160rem;
-		margin-left:2rem;
+
+
+@media(max-width:600px){
+	.main_container{
+		display: none;
 	}
 }
-@media screen and (max-width: 600px){
-	.row{
-		display: flex;
-		flex-direction: column;
-		width:80rem;
-		margin-left:1px;
+@media(max-width:900px){
+	.main_container{
+		display: none;
 	}
 }

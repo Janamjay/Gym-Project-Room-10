@@ -1,0 +1,161 @@
+.maincontainer{
+  padding: 5rem 0;
+  box-sizing: border-box;
+}
+.stories{
+  text-align: center;
+}
+.stories> h1{
+  font-size: 50px;
+  margin-bottom: 1rem;
+  color: grey;
+  font-weight: 500;
+}
+.stories p{
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+
+.container {  
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  box-shadow: 5px 3px 5px black;
+  margin: 20px;
+  background-color: rgb(65, 39, 38);
+  border-style: none;
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.image img {
+  width: 235px;
+}
+.button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  border: 1px solid black;
+  font-size: medium;
+  border-style: none;
+  background-color: rgb(117, 80, 10);
+  border-radius: 2px;
+  margin-top: -25px;
+  color: rgb(241, 241, 194);
+  box-shadow: 2px 3px 5px 2px;
+}
+.card_title {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  color: aliceblue;
+}
+.description {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  font-size: 12px;
+}
+.story {
+  align-items: center;
+  margin-left: -2px;
+  padding: 5px 5px 5px 5px;
+  font-size: larger;
+  width: 15rem;
+  box-shadow: 2px 3px 5px 2px;
+  border-radius: 5px;
+  background-color: rgb(243, 185, 185);
+  cursor: pointer;
+}
+
+.before {
+  border: 1px solid black;
+  font-size: medium;
+  border-style: none;
+  background-color: rgb(117, 80, 10);
+  border-radius: 2px;
+  width: 3rem;
+
+  color: rgb(241, 241, 194);
+  box-shadow: 2px 3px 5px 2px;
+}
+.after {
+  border: 1px solid black;
+  font-size: medium;
+  border-style: none;
+  background-color: rgb(117, 80, 10);
+  border-radius: 2px;
+  width: 3rem;
+  color: rgb(241, 241, 194);
+  box-shadow: 2px 3px 5px 2px;
+}
+.mainBody {
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  height: 50%;
+  padding-left: 80px;
+  background-color: white;
+  box-shadow: 5px 3px 5px 2px;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  
+  .container {
+    margin: 10px;
+    width: 92%;
+    padding-left: 5.9rem;
+  }
+
+  .image img {
+    width: 100%;
+  }
+
+  .button {
+    margin-top: 10px;
+  }
+  .story {
+    margin-left: 17px;
+  }
+  .image img {
+    width: 100%;
+    margin-left: -0.5rem;
+  }
+  .mainBody {
+    width: 100vw;
+  }
+  .story {
+    margin-left: 7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 88%;
+    margin-left: 8px;
+    padding-left:6px;
+  }
+
+  .image img {
+    width: 100%;
+    margin-left: 0rem;
+  }
+
+  .button {
+    margin-top: 10px;
+  }
+
+  .mainBody {
+    padding-left: 20px;
+  }
+  .story {
+    margin-left: 74px;
+  }
+}

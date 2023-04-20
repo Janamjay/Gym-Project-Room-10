@@ -1,39 +1,76 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import style from "./Login.module.css";
+import CustomInput from "../../atom/customInputs/CustomInput";
+import CustomButton from "../../atom/customButtons/CustomButton";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import Background from "../../backround/Background";
+import log from "../../images/login.jpg";
 
-export default function Login(props) {
+export default function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [userList, setUserList] = useState([]);
+  const nav = useNavigate();
+  useEffect(() => {
+    let data = JSON.parse(localStorage.getItem("userData"));
 
+    setUserList(data);
+  }, []);
+  // console.log(userList);
+  function handleLogin() {
+    if (email === "" || password === "") {
+      alert("FIll the form first");
+    } else if (userList !== undefined) {
+      const userFind = userList.find(
+        (x) => x.email === email && x.password === password
+      );
+
+      if (!userFind) {
+        alert("No user found. Please sign up!!");
+        setEmail("");
+        setPassword("");
+      } else {
+        alert(`${userFind.userName} you are successfully  login`);
+        nav("/");
+      }
+    } else {
+      alert("please register first");
+    }
+  }
   return (
-    <div className='outer-container'>
-      <div className="main-container">
-        <h1>Welcome !</h1>
-        <p className='grey'>Log in your Account</p>
-        <div className="input-field">
-          <label className='grey'  htmlFor="">Your Email</label>
-          <input type="email" name="email" id="" placeholder='username@gmail.com'/>
-          <label className='grey' htmlFor="">Password</label>
-          <input type="password" name="pass" id="" placeholder='***********'/>
-        </div>
-        <div className="remember">
-          <div className='checkme'>
-          <label htmlFor=""><input type="checkbox" name="tick" id="" />Remember Me</label>
-          
-          </div>
-          <a className='grey'href="/">Forget Password?</a>
-        </div>
-        <button className='loginbtn'>Login</button>
-        <div className="divide">
-          <hr />
-          <p className='grey'>or</p>
-          <hr />
-        </div>
-        <div className="link">
-          <button className='grey'><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqOAZphgekT0e06wtwTx9-B_ZeX_ymipCj8EKS2vOUYbx7NeTu93hJF4gnWyKpqdAVAuk&usqp=CA " alt="" /><span> Continue with Google</span></button>
-          <button className='grey'><img src="https://clipart.info/images/ccovers/1509135366facebook-symbol-png-logo.png" alt="" /> <span>Continue with Facebook</span></button>
-        </div>
-        <div className="signup">
-          <p className='grey'> Don't have any Account? <span onClick={props.handleonClick}>Sign Up</span></p>
-        </div>
+    <>
+      <Background
+        url={log}
+        heading="LOGIN PAGE"
+        desc="LOGIN TO AVAIL EXTRA BENIFITS"
+      />
+      <div className={style.wrap}>
+        <h3>Login Page</h3>
+        <CustomInput
+          className={style.email}
+          type="email"
+          placeholder="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          // onChange={(e) => {...obj,obj.setEmail(e.target.value)}}
+        />
+        <CustomInput
+          className={style.password}
+          type="password"
+          placeholder="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <CustomButton
+          style={style.button}
+          onClick={handleLogin}
+          btntxt="Login"
+        />
+        <p>    
+          Not registered yet? <Link to="/signup"> Signup</Link>
+        </p>
       </div>
-    </div>
-  )
+    </>
+  );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import ReactPlayer from "react-player";
+
 import styled from "./VideoSection.module.css";
 
 export default function Videosection() {
@@ -18,7 +18,15 @@ export default function Videosection() {
       </div>
 
       <div className={styled.video_section}>
-        <ReactPlayer controls url="https://youtu.be/1Bj5PPxgEwo" />
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/1Bj5PPxgEwo"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   );

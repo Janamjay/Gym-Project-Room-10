@@ -70,3 +70,13 @@
     text-align: center;
     padding-bottom: 1rem;
 }
+@media (max-width:500) {
+    .main_container{
+        display: none;
+    }
+}
+@media (max-width:900) {
+    .main_container{
+        display: none;
+    }
+}

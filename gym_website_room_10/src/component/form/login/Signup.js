@@ -41,7 +41,8 @@ export default function SignUp() {
       );
       alert("Succesfully Registered!!");
       navigate("/login");
-    } else {
+    }
+     else {
       alert("Please enter valid details");
     }
 

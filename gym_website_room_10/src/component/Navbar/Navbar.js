@@ -16,7 +16,7 @@ export default function Navbar() {
         </div>
         <div className={`${show ? nav.Active_Links : nav.right} `}>
           <li className={nav.common}>
-            <Link to="/"> Home</Link>
+            <Link to="/home"> Home</Link>
           </li>
           <li className={nav.common}>
             <Link to="/about">About Us</Link>
@@ -31,7 +31,7 @@ export default function Navbar() {
             <Link to="/contact">Contact</Link>
           </li>
           <div>
-          <Link to="/login"><CustomButton btntxt="Log In" style={nav.btnlog} /></Link>
+          <Link to="/"><CustomButton btntxt="Log In" style={nav.btnlog} /></Link>
           </div>
         </div>
 

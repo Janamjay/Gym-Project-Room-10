@@ -1,6 +1,5 @@
 import React from "react";
-import  head from './Headings.module.css'
-
+import head from "./Headings.module.css";
 
 export default function Headings() {
   return (
@@ -12,8 +11,6 @@ export default function Headings() {
         and some of the best fitness industry branins in the world. we,ve
         rewritten the rules and changed the game.
       </p>
-
-      
     </div>
   );
 }

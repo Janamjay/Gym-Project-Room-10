@@ -32,7 +32,7 @@ function App() {
         <Route path="/classes" Component={Classes} />
         <Route path="/success" Component={Card} />
       </Routes>
-       {/* <Footer/>  */}
+        <Footer/>  
     </>
   );
 }

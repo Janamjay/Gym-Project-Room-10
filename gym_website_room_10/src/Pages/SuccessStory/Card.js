@@ -71,22 +71,8 @@ export default function Card() {
       description: "lost 31 lbs.* & 55 lbs.*",
       story: "Marry's story",
     },
-    {
-      id: "1",
-      before: "Before",
-      after: "After",
-      name: "Marry",
-      description: "lost 31 lbs.* & 55 lbs.*",
-      story: "Marry's story",
-    },
-    {
-      id: "1",
-      before: "Before",
-      after: "After",
-      name: "Marry",
-      description: "lost 31 lbs.* & 55 lbs.*",
-      story: "Marry's story",
-    }
+    
+
   ];
   return (
     <>

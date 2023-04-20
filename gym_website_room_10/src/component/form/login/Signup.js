@@ -93,7 +93,7 @@ export default function SignUp() {
           btntxt="SignUp"
         />
         <p>
-          Already registered? <Link to="/login">Login</Link>
+          Already registered? <Link to="/">Login</Link>
         </p>
       </div>
     </>

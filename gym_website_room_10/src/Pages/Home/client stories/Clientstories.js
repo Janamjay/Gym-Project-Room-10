@@ -1,10 +1,10 @@
 import React from "react";
-import Styles from "./Card.module.css";
 import { FiPlay } from "react-icons/fi";
-import mary from "../../component/images/img1.png";
-import Background from "../../component/backround/Background";
-import success from '../../component/images/succes.jpg'
-export default function Card() {
+import mary from "../../../component/images/img1.png";
+import cli from "./client.module.css";
+import {Link} from 'react-router-dom'
+
+export default function Clientstories() {
   const Data = [
     {
       id: "1",
@@ -31,24 +31,8 @@ export default function Card() {
       story: "Marry's story",
     },
     {
-      id: "2",
-
-      before: "Before",
-      after: "After",
-      name: "Marry",
-      description: "lost 31 lbs.* & 55 lbs.*",
-      story: "Marry's story",
-    },
-    {
-      id: "3",
-      before: "Before",
-      after: "After",
-      name: "Marry",
-      description: "lost 31 lbs.* & 55 lbs.*",
-      story: "Marry's story",
-    },
-    {
       id: "1",
+
       before: "Before",
       after: "After",
       name: "Marry",
@@ -89,53 +73,40 @@ export default function Card() {
     }
   ];
   return (
-    <>
-    <Background
-        url={success}
-        heading="Success Story"
-        desc="Stories From Ours Members You can be also One of them."
-      />
-    <div className={Styles.main}>
-      <h1>REAL PEOPLE .REAL SUCCESS STORY</h1>
-      <hr></hr>
-      <hr></hr>
-      <p className={Styles.para}>
-        Powered by a transformative bussiness model,propretary technology,tried
-        and tested methodology,and tested methodology ,and some of the best
-        fitness industry brains in the world .we,ve rewritten the rules and
-        changed the game
-      </p>
-      <div className={Styles.mainBody}>
-        {Data.map((item) => {
+    <div className={cli.maincontainer}> 
+      <div className={cli.stories}>
+        <h1>Our Client success stories</h1>
+        <p>What others think of our service</p>
+      </div>
+      <div className={cli.mainBody}>
+        {Data.map((item,index) => {
           return (
-            <div key={item} className={Styles.container}>
-              <div className={Styles.image}>
+            <div key={index} className={cli.container}>
+              <div className={cli.image}>
                 <img src={mary} alt="mary" />
-                <div className={Styles.button}>
-                  <div className={Styles.before}>{item.before}</div>
-                  <div className={Styles.after}>{item.after}</div>
+                <div className={cli.button}>
+                  <div className={cli.before}>{item.before}</div>
+                  <div className={cli.after}>{item.after}</div>
                 </div>
-                <div className={Styles.desc}>
-                  <div className={Styles.card_title}>
+                <div className={cli.desc}>
+                  <div className={cli.card_title}>
                     <h3>{item.name}</h3>
-                    <div className={Styles.description}>
+                    <div className={cli.description}>
                       <p>{item.description}</p>
                     </div>
                   </div>
                 </div>
-                <button className={Styles.story}>
+                <Link to='/success'> <button className={cli.story}>
                   {item.story}
                   <span>
-                    {" "}
                     <FiPlay />
                   </span>
-                </button>
+                </button></Link>
               </div>
             </div>
           );
         })}
       </div>
     </div>
-</>
-  )
+  );
 }

@@ -23,31 +23,37 @@ export default function SignUp() {
   }, []);
 
   function handleSignUp() {
-
-    console.log("clicked")
     const userInfo = {
       email: email,
       password: password,
       userName: userName,
     };
-
+  
     // validation
-    if (email.includes("@") && password.length >= 4 && password.length <= 8) {
-      setLocalStorageData((prevData) => [...prevData, userInfo]);
+  
+  
+    if (email.includes('@') && password.length >= 4 && password.length <= 8) {
+      setLocalStorageData(prevData => [...prevData, userInfo]);
       console.log(localStorageData)
-      localStorage.setItem(
-        "userData",
-        JSON.stringify([...localStorageData, userInfo])
-      );
-      alert("Succesfully Registered!!");
-      navigate("/login");
-    } else {
-      alert("Please enter valid details");
+      if(localStorageData.find((user)=> user.email === email && user.userName === userName)){
+  
+      return alert("user already exist please choose another email and username")
+  
     }
-
-    setEmail("");
-    setPassword("");
-    setUserName("");
+      
+    // if(user = userInfo.find((user) => user.email === userInfo.email))
+      
+      localStorage.setItem('userData', JSON.stringify([...localStorageData, userInfo])) 
+      alert('Succesfully Registered!!')
+      navigate('/login')
+    }
+     else {
+      alert('Please enter valid details');
+    }
+  
+    setEmail('');
+    setPassword('');
+    setUserName('');
   }
  
 

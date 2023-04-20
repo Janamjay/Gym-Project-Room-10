@@ -30,7 +30,9 @@ export default function Navbar() {
           <li className={nav.common}>
             <Link to="/contact">Contact</Link>
           </li>
-          <CustomButton btntxt="Log In" style={nav.btnlog} />
+          <div>
+          <Link to="/login"><CustomButton btntxt="Log In" style={nav.btnlog} /></Link>
+          </div>
         </div>
 
         <div className={nav.mobile_navbar_btn}>

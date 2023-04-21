@@ -6,11 +6,13 @@
     margin-top: 1rem;
     
 }
-.fitness li:hover{
-    
+.fitness li:hover{    
     color: red;
     cursor: pointer;
 }
+
+
+
 @media screen and (max-width: 600px) {
     .fitness {
     flex-direction: row;

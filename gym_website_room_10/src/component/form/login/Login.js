@@ -24,8 +24,8 @@ export default function Login() {
     } else if (userList !== null) {
       const userFind = userList.find(
         (x) =>
-          (x.email === email && x.email === "") &&
-          (x.password === password && x.password === "")
+          (x.email === email || x.email === "") &&
+          (x.password === password || x.password === "")
       );
 
       if (!userFind) {

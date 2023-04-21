@@ -4,11 +4,9 @@
     justify-content: space-between;
     flex-direction: column;
     margin-top: 1rem;
-    /* padding: auto; */
     
 }
-.Account li:hover{
-    
+.Account li:hover{    
     color: red;
     cursor: pointer;
 }

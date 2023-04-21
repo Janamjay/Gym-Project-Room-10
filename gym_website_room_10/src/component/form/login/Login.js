@@ -21,8 +21,12 @@ export default function Login() {
   function handleLogin() {
     if (email === "" || password === "") {
       alert("FIll the form first");
-    } else if (userList !== undefined) {
-      const userFind = userList.find((x) =>( x.email === email || x.email==="") && (x.password === password || x.password=== ""));
+    } else if (userList !== null) {
+      const userFind = userList.find(
+        (x) =>
+          (x.email === email && x.email === "") &&
+          (x.password === password && x.password === "")
+      );
 
       if (!userFind) {
         alert("No user found. Please sign up!!");
@@ -65,7 +69,7 @@ export default function Login() {
           onClick={handleLogin}
           btntxt="Login"
         />
-        <p>    
+        <p>
           Not registered yet? <Link to="/signup"> Signup</Link>
         </p>
       </div>

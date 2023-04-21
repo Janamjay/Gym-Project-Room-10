@@ -71,6 +71,8 @@
     box-sizing: border-box;
     display: block;
     width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5rem;
   }
   .left_container {
     box-sizing: border-box;
@@ -82,7 +84,6 @@
     width: 100px;
   }
   .left_container h1 {
-    font-size: 30px;
     margin-right: 0px;
   }
   .right_container {
@@ -119,7 +120,7 @@
   .left_container {
     box-sizing: border-box;
     width: 90%;
-    height: 30%;
+    height: 45%;
     margin: 50px 25px;
   }
   .left_container h1 {
@@ -127,7 +128,7 @@
     padding-right: 0px;
   }
   .left_container img {
-    margin-right: 4rem;
+    margin-right: 1rem;
   }
   .right_container {
     box-sizing: border-box;
@@ -153,7 +154,7 @@
 
 @media (max-width: 400px) {
   .left_container h1 {
-    font-size: 16px;
+    font-size: 27px;
   }
   .right_sub h1,
   .right_sub h2 {

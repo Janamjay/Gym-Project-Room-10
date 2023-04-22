@@ -3,6 +3,7 @@ import { BsCalendarCheck } from "react-icons/bs";
 import { RiUser3Line } from "react-icons/ri";
 import { ImFileVideo, ImNewspaper } from "react-icons/im";
 import paisa from "./Pricing.module.css";
+import { Link } from "react-router-dom";
 import CustomButton from "../atom/customButtons/CustomButton";
 
 export default function Pricing() {
@@ -61,7 +62,7 @@ export default function Pricing() {
               Plans
             </span>
           </p>
-          <CustomButton btntxt="Buy Now" style={paisa.btnselect} />
+          <Link to="/"><CustomButton btntxt="Buy Now" style={paisa.btnselect} /></Link>
         </div>
         <div className={paisa.plan}>
           <p>1-month pre-pay plan</p>

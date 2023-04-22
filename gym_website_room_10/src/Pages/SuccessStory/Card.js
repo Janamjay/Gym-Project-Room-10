@@ -112,7 +112,6 @@ export default function Card() {
                 <button className={Styles.story}>
                   {item.story}
                   <span>
-                    {" "}
                     <FiPlay />
                   </span>
                 </button>

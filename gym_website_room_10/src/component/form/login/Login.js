@@ -29,15 +29,15 @@ export default function Login() {
       );
 
       if (!userFind) {
-        alert("No user found. Please sign up!!");
+        alert("No user found. Please sign up!! 😥😥");
         setEmail("");
         setPassword("");
       } else {
-        alert(`${userFind.userName} you are successfully  login`);
+        alert(`${userFind.userName} you are successfully  login 🎉🎉`);
         nav("/home");
       }
     } else {
-      alert("please register first");
+      alert("Please Signup first 😊😊");
     }
   }
   return (

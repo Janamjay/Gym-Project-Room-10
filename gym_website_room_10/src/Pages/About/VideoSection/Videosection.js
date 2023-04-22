@@ -19,13 +19,12 @@ export default function Videosection() {
 
       <div className={styled.video_section}>
         <iframe
-          width="100%"
+          width="470"
           height="315"
           src="https://www.youtube.com/embed/1Bj5PPxgEwo"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
     </div>

@@ -5,25 +5,20 @@ import image1 from "../../../component/images/image1.png";
 export default function MiddleSection() {
   return (
     <div className={styles.main_container}>
-      <div className={styles.main_section}>
-        <div className={styles.left_section}>
-          <h1>Facts</h1>
-          <h2>141'702 lbs</h2>
-          <h3>Fitness Club Client's Fat Lost to Date</h3>
-
-          <h1>Facts</h1>
-          <h3>Fitness Club Client's Muscle Gained to Date</h3>
-
-          <h1>Facts</h1>
-          <h3>Fitness Club Client's Muscle  to contract or shorten to Date</h3>
-
-          <h1>Facts</h1>
-          <h3>Fitness Club Client's Muscle stretch to Date</h3>
-        </div>
-        <div className={styles.image}>
-          <img src={image1} alt="displaying"></img>
+      <div className={styles.left_section}>
+        <h1>Facts</h1>
+        <div className={styles.content}>
+          <p className={styles.lbs}>141'702 lbs</p>
+          <p className={styles.desc}>Fitness Club Client's Fat Lost to Date</p>
+          <p className={styles.lbs}>141'702 lbs</p>
+          <p className={styles.desc}>
+            Fitness Club Client's Muscle to contract or shorten to Date
+          </p>
         </div>
       </div>
-     </div>
+      <div className={styles.right_section}>
+        <img src={image1} alt="displaying"></img>
+      </div>
+    </div>
   );
 }

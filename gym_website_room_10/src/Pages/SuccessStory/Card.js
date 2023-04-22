@@ -82,15 +82,15 @@ export default function Card() {
         desc="Stories From Ours Members You can be also One of them."
       />
     <div className={Styles.main}>
-      <h1>REAL PEOPLE .REAL SUCCESS STORY</h1>
-      <hr></hr>
-      <hr></hr>
+      <div className={Styles.content}>
+      <h1>REAL PEOPLE . REAL SUCCESS STORY</h1>
       <p className={Styles.para}>
         Powered by a transformative bussiness model,propretary technology,tried
         and tested methodology,and tested methodology ,and some of the best
         fitness industry brains in the world .we,ve rewritten the rules and
         changed the game
       </p>
+      </div>
       <div className={Styles.mainBody}>
         {Data.map((item) => {
           return (

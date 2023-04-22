@@ -71,9 +71,42 @@
 		margin-left:2rem;
 	}
 }
+
+/*=========================Responsive section============================ */
+
+/*=========================Mobile view ============================ */
+
+@media(max-width:500px){
+	.row{
+		display: block;
+		width: 100%;
+		margin-top: 2rem;
+	}
+	.trainer_col{
+		width: 100%;
+
+	}
+}
+
+/*=========================Responsive section============================ */
+
+/*=========================Tablet view ============================ */
+
 @media(max-width:900px){
-	.main_container{
-		display: none;
+
+	.main_container h1{
+		font-size: 4rem;
+	}
+	.main_container h4{
+		font-size: 2rem;
+	}
+	.row{
+		display: block;
+		width: 100%;
+		margin-top: 2rem;
+	}
+	.trainer_col{
+		width: 100%;
 	}
 }  
 

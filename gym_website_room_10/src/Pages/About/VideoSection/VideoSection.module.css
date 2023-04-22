@@ -19,7 +19,7 @@
 }
 
 .video_section {
-  /* width: 40%; */
+  width: 40%;
 }
 
 .videoContent h3 {
@@ -53,7 +53,6 @@
   }
   .video_section {
     width: 100%;
-    padding-left: 18%;
   }
 }
 /* ================================Mobile View============================ */
@@ -78,6 +77,5 @@
   }
   .video_section {
     width: 100%;
-    padding-left: 0px;
   }
 }

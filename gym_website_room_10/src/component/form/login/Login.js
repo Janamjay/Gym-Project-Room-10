@@ -21,7 +21,8 @@ export default function Login() {
   function handleLogin() {
     if (email === "" || password === "") {
       alert("FIll the form first");
-    } else if (userList !== undefined) {
+    } else if (userList !== null) {
+
       const userFind = userList.find(
         (x) =>
           (x.email === email || x.email === "") &&
@@ -29,15 +30,15 @@ export default function Login() {
       );
 
       if (!userFind) {
-        alert("No user found. Please sign up!!");
+        alert("No user found. Please sign up!! 😥😥");
         setEmail("");
         setPassword("");
       } else {
-        alert(`${userFind.userName} you are successfully  login`);
+        alert(`${userFind.userName} you are successfully  login 🎉🎉`);
         nav("/home");
       }
     } else {
-      alert("please register first");
+      alert("Please Signup first 😊😊");
     }
   }
   return (

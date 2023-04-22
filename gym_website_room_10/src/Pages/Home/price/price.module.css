@@ -27,3 +27,33 @@
     display: flex;
     width: 100%;
 }
+
+
+/*=========================Responsive section============================ */
+
+/*=========================Mobile view ============================ */
+
+@media(max-width:500px){
+    .main_container{
+        width: 100%;
+    }
+  .pricingmain{
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+}
+/*=========================Tablet view ============================ */
+
+@media(max-width:900px){
+    .main_container{
+        width: 100%;
+    }
+    .pricingmain{
+        display: block;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 20px;
+      }
+}

@@ -1,75 +1,85 @@
 .content {
   display: flex;
   width: 100%;
-
-  padding: 3rem 4rem;
-  margin-top: 3rem;
-  padding-right: 0;
+  padding: 4rem;
+  padding-right: 0px;
   box-sizing: border-box;
+  margin-top: 3rem;
 }
 
 .videoContent {
   width: 40%;
+  padding: 3rem;
+  padding-top: 0px;
+}
+.videoContent h1 {
+  font-size: 3rem;
+  padding-bottom: 3rem;
+  font-weight: 400;
 }
 
 .video_section {
-  width: 60%;
+  width: 40%;
 }
 
 .videoContent h3 {
-  color: black;
+  color: grey;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
-/* this is for mobile view */
+/* =============================Responsive Section====================== */
 
-@media (max-width: 500px) {
-  .content {
-    flex-direction: column;
-    padding: 0 1rem;
-  }
 
-  .videoContent {
-    width: 150%;
-    /* max-width: 90%; */
-    margin-bottom: 1rem;
-    display: none;
-  }
+/* ================================tablet View============================ */
 
- 
-
-  .video_section > div {
-    display: block;
-    top: 0;
-    left: 0;
-  }
-}
-
-/* this is tablet view */
 
 @media (max-width: 900px) {
   .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1 0 2rem;
-
+    display: block;
+    width: 100%;
+    padding: 0px;
+  }
+  .videoContent {
+    width: 100%;
     box-sizing: border-box;
   }
-
-  .videoContent,
+  .videoContent h1 {
+    text-align: left;
+    font-size: 4rem;
+  }
+  .videoContent h3 {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
   .video_section {
-    width: 90%;
-    padding: 0 140px 10px 10px;
-    font-size: 10px;
-    box-sizing: border-box;
-    height: auto;
+
+    width: 100%;
   }
+}
+/* ================================Mobile View============================ */
 
- 
+@media (max-width: 500px) {
+  .content {
+    display: block;
+    width: 100%;
+    padding: 0px;
+  }
+  .videoContent {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .videoContent h1 {
+    text-align: left;
+    font-size: 2rem;
+  }
+  .videoContent h3 {
+    text-align: left;
+    font-size: 1rem;
+  }
+  .video_section {
+    width: 100%;
 
-  .video_section > div {
-    top: 0;
-    left: 0;
-    width: 80%;
   }
 }

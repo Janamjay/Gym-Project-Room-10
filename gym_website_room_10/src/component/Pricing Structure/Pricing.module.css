@@ -70,13 +70,20 @@
     text-align: center;
     padding-bottom: 1rem;
 }
-@media (max-width:500) {
-    .main_container{
-        display: none;
+
+/* ======================Responsive Section=========================== */
+
+
+
+@media (max-width:500px) {
+    .pricechart{
+        width: 100%;
+        margin-left: 3px;
     }
 }
-@media (max-width:900) {
-    .main_container{
-        display: none;
+@media (max-width:900px) {
+    .pricechart{
+        width: 100%;
+        
     }
 }

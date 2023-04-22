@@ -30,9 +30,12 @@
 
   .videoContent {
     width: 150%;
+    /* max-width: 90%; */
     margin-bottom: 1rem;
     display: none;
   }
+
+ 
 
   .video_section > div {
     display: block;
@@ -61,6 +64,8 @@
     box-sizing: border-box;
     height: auto;
   }
+
+ 
 
   .video_section > div {
     top: 0;

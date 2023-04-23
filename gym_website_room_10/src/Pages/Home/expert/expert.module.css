@@ -1,4 +1,4 @@
-.main_container{
+ .main_container{
 	width: 80%;
 	margin: auto;
 	text-align: center;
@@ -63,6 +63,14 @@
 	bottom: 10%;
 	opacity: 1;
 }
+@media screen and (min-width: 601px) and (max-width: 1024px){
+	.row{
+		display: flex;
+		flex-direction: column;
+		width:160rem;
+		margin-left:2rem;
+	}
+}
 
 /*=========================Responsive section============================ */
 
@@ -76,6 +84,7 @@
 	}
 	.trainer_col{
 		width: 100%;
+
 	}
 }
 
@@ -99,4 +108,5 @@
 	.trainer_col{
 		width: 100%;
 	}
-}
+}  
+

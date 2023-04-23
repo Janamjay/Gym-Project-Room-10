@@ -4,7 +4,18 @@ import cls from "../../component/images/class.jpg";
 import styles from "./Classes.module.css";
 import {CgProfile} from 'react-icons/cg'
 import {BiTimeFive} from 'react-icons/bi'
+import { useEffect } from "react";
+import { isRefresh} from "../../Recoil";
+import { useRecoilValue } from "recoil";
+import { useNavigate } from "react-router-dom";
 export default function Classes() {
+  const nav =useNavigate()
+  const Login = useRecoilValue(isRefresh)
+   useEffect(()=>{
+    if(!Login){
+      nav ("/")
+    }
+   },[])
   const data = [
     {
       id: "1",
@@ -33,6 +44,7 @@ export default function Classes() {
  
   ];
   return (
+  
     <div>
       <Background
         url={cls}

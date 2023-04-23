@@ -4,7 +4,11 @@ import { FiPlay } from "react-icons/fi";
 import mary from "../../component/images/img1.png";
 import Background from "../../component/backround/Background";
 import success from '../../component/images/succes.jpg'
+
 export default function Card() {
+
+
+
   const Data = [
     {
       id: "1",

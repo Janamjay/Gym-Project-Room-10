@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import nav from "./Navbar.module.css";
 import { CgMenu, CgClose } from "react-icons/cg";
 import logo from "../images/logo.png";
-import CustomButton from "../atom/customButtons/CustomButton";
+import CustomButton from "../custom/customButtons/CustomButton";
 
 export default function Navbar() {
   const [show, setShow] = useState(false);

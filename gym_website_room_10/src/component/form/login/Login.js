@@ -6,12 +6,17 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Background from "../../backround/Background";
 import log from "../../images/login.jpg";
+import { useSetRecoilState } from "recoil";
+import { isRefresh } from "../../../Recoil";
+
+
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userList, setUserList] = useState([]);
   const nav = useNavigate();
+  const setLogin =useSetRecoilState(isRefresh)
   useEffect(() => {
     let data = JSON.parse(localStorage.getItem("userData"));
 
@@ -34,12 +39,16 @@ export default function Login() {
         setPassword("");
       } else {
         alert(`${userFind.userName} you are successfully  login 🎉🎉`);
+        setLogin(true)
         nav("/home");
+       
       }
     } else {
       alert("Please Signup first 😊😊");
     }
+    
   }
+
   return (
     <>
       <Background

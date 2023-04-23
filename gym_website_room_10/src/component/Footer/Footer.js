@@ -28,7 +28,9 @@ export default function Footer() {
           <div className={Styles.footer_box_social}>
             <div className={Styles.footer_social}>
               <li>
-                <TiSocialFacebook />
+              
+                  <TiSocialFacebook />
+                
               </li>
               <li>
                 <TiSocialLinkedin />

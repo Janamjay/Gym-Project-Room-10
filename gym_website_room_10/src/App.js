@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation ,IndexRouteObject, useNavigate} from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
@@ -12,9 +12,9 @@ import Login from "./component/form/login/Login";
 import { useEffect } from "react";
 
 
-function App() {
 
-  const location =useLocation()
+function App() {
+ const location =useLocation()
   useEffect(()=>{
     window.scrollTo({top:0})
   },[location])
@@ -24,13 +24,15 @@ function App() {
     <>
       <Navbar/>
       <Routes>
-        <Route path="/" Component={Login} />
+        <Route path="/" Component={Login} >
+        </Route>
         <Route path="/about" Component={About} />
         <Route path="/contact" Component={Contact} />
         <Route path="/home" Component={Home} />
         <Route path="/signup" Component={SignUp} />
         <Route path="/classes" Component={Classes} />
         <Route path="/success" Component={Card} />
+        
       </Routes>
         <Footer/>  
     </>

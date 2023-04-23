@@ -10,6 +10,7 @@ import { useRecoilValue } from 'recoil';
 import { isRefresh } from '../../Recoil';
 import { useNavigate } from 'react-router-dom';
 export default function Home() {
+
   const nav =useNavigate()
   const Login = useRecoilValue(isRefresh)
   console.log();
@@ -18,6 +19,9 @@ export default function Home() {
    nav ("/home")
  }
  },[])
+
+
+
 
   return (
     <div>

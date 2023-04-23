@@ -1,6 +1,6 @@
 import React from "react";
 import mass from "./bmi.module.css";
-import CustomButton from "../../../component/atom/customButtons/CustomButton";
+import CustomButton from "../../../component/custom/customButtons/CustomButton";
 
 export default function BMI() {
   return (

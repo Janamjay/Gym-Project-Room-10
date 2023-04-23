@@ -2,8 +2,18 @@ import React from "react";
 import styles from "./Contact.module.css";
 import Background from "../../component/backround/Background";
 import ctn from "../../component/images/gym.jpg";
-
+import { useRecoilValue } from 'recoil';
+import { isRefresh } from '../../Recoil';
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from "react";
 export default function Contact() {
+  const nav =useNavigate()
+  const Login = useRecoilValue(isRefresh)
+   useEffect(()=>{
+    if(!Login){
+      nav ("/")
+    }
+   },[])
   return (
     <>
       <Background

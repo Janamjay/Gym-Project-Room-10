@@ -28,19 +28,32 @@ export default function Footer() {
           <div className={Styles.footer_box_social}>
             <div className={Styles.footer_social}>
               <li>
-                <TiSocialFacebook />
+                <a href="https://www.facebook.com/">
+                  <TiSocialFacebook />
+                </a>
               </li>
               <li>
-                <TiSocialLinkedin />
+                <a href="https://www.linkedin.com/">
+                  <TiSocialLinkedin />
+                </a>
               </li>
+
               <li>
-                <TiSocialTwitter />
+                <a href="https://twitter.com/">
+                  <TiSocialTwitter />
+                </a>
               </li>
+
               <li>
-                <TiSocialYoutube />
+                <a href="https://www.youtube.com/">
+                  <TiSocialYoutube />
+                </a>
               </li>
+
               <li>
-                <TiSocialInstagram />
+                <a href="https://www.instagram.com/">
+                  <TiSocialInstagram />
+                </a>
               </li>
             </div>
           </div>

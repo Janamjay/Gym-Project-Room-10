@@ -12,7 +12,13 @@ import Login from "./component/form/login/Login";
 import { useEffect } from "react";
 
 
+
+
 function App() {
+
+  
+ 
+
 
   const location =useLocation()
   useEffect(()=>{
@@ -31,8 +37,16 @@ function App() {
         <Route path="/signup" Component={SignUp} />
         <Route path="/classes" Component={Classes} />
         <Route path="/success" Component={Card} />
+       
+       
       </Routes>
         <Footer/>  
+
+
+       
+      
+       
+        
     </>
   );
 }

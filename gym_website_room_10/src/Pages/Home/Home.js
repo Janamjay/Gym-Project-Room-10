@@ -7,7 +7,17 @@ import Expert from './expert/Expert';
 import Price from './price/Price';
 import Clientstories from './client stories/Clientstories';
 
+
 export default function Home() {
+
+
+  
+
+
+
+  
+
+
   return (
     <div>
       <Background  

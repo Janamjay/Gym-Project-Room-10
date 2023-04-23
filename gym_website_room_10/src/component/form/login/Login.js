@@ -1,17 +1,25 @@
 import React, { useState, useEffect } from "react";
 import style from "./Login.module.css";
-import CustomInput from "../../atom/customInputs/CustomInput";
-import CustomButton from "../../atom/customButtons/CustomButton";
+import CustomInput from "../../custom/customInputs/CustomInput";
+import CustomButton from "../../custom/customButtons/CustomButton";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Background from "../../backround/Background";
 import log from "../../images/login.jpg";
+import { useSetRecoilState } from "recoil";
+import { isRefresh } from "../../../Recoil";
+
+
+
 
 export default function Login() {
+
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userList, setUserList] = useState([]);
   const nav = useNavigate();
+  const setLogin =useSetRecoilState(isRefresh)
   useEffect(() => {
     let data = JSON.parse(localStorage.getItem("userData"));
 
@@ -34,12 +42,16 @@ export default function Login() {
         setPassword("");
       } else {
         alert(`${userFind.userName} you are successfully  login 🎉🎉`);
+        setLogin(true)
         nav("/home");
+       
       }
     } else {
       alert("Please Signup first 😊😊");
     }
+    
   }
+
   return (
     <>
       <Background

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import CustomInput from "../../atom/customInputs/CustomInput";
-import CustomButton from "../../atom/customButtons/CustomButton";
+import CustomInput from "../../custom/customInputs/CustomInput";
+import CustomButton from "../../custom/customButtons/CustomButton";
 import style from "./Login.module.css";
 import { Link , useNavigate } from "react-router-dom";
 import Background from "../../backround/Background";

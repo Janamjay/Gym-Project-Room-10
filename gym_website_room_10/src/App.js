@@ -10,6 +10,7 @@ import Footer from "./component/Footer/Footer";
 import SignUp from "./component/form/login/Signup";
 import Login from "./component/form/login/Login";
 import { useEffect } from "react";
+import Price from "./Pages/Home/price/Price";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/signup" Component={SignUp} />
         <Route path="/classes" Component={Classes} />
         <Route path="/success" Component={Card} />
+        <Route path="/price" Component={Price} />
       </Routes>
         <Footer/>  
     </>

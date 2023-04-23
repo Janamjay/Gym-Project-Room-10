@@ -4,8 +4,7 @@ import CustomInput from "../../custom/customInputs/CustomInput";
 import CustomButton from "../../custom/customButtons/CustomButton";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import Background from "../../backround/Background";
-import log from "../../images/login.jpg";
+import log from '../../../component/images/login.jpg'
 import { useSetRecoilState } from "recoil";
 import { isRefresh } from "../../../Recoil";
 
@@ -13,8 +12,6 @@ import { isRefresh } from "../../../Recoil";
 
 
 export default function Login() {
-
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userList, setUserList] = useState([]);
@@ -25,7 +22,6 @@ export default function Login() {
 
     setUserList(data);
   }, []);
-  // console.log(userList);
   function handleLogin() {
     if (email === "" || password === "") {
       alert("FIll the form first");
@@ -53,21 +49,20 @@ export default function Login() {
   }
 
   return (
-    <>
-      <Background
-        url={log}
-        heading="LOGIN PAGE"
-        desc="LOGIN TO AVAIL EXTRA BENIFITS"
-      />
+    <div className={style.main_container}>
+      <img src={log} alt="logImage" />
+      <div className={style.heading}>
+        <h1>LOGIN PAGE</h1>
+        <p>Login to get Updated </p>
+      </div>
       <div className={style.wrap}>
-        <h3>Login Page</h3>
+        <h3>Login </h3>
         <CustomInput
           className={style.email}
           type="email"
           placeholder="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          // onChange={(e) => {...obj,obj.setEmail(e.target.value)}}
         />
         <CustomInput
           className={style.password}
@@ -85,6 +80,6 @@ export default function Login() {
           Not registered yet? <Link to="/signup"> Signup</Link>
         </p>
       </div>
-    </>
+    </div>    
   );
 }

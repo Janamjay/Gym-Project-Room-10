@@ -9,7 +9,6 @@ export default function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [userName, setUserName] = useState("");
-  // const [userDatas, setUserDatas] = useState([]);
 
   const navigate = useNavigate();
   const [localStorageData, setLocalStorageData] = useState([]);
@@ -39,8 +38,6 @@ export default function SignUp() {
       return alert("user already exist please choose another email and username")
   
     }
-      
-    // if(user = userInfo.find((user) => user.email === userInfo.email))
       
       localStorage.setItem('userData', JSON.stringify([...localStorageData, userInfo])) 
       alert('Succesfully Registered!!')

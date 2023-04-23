@@ -1,6 +1,5 @@
 import React from 'react'
 import bg from './back.module.css'
-
 import CustomButton from "../custom/customButtons/CustomButton";
 import { Link } from 'react-router-dom';
 

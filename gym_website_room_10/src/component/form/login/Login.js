@@ -19,9 +19,9 @@ export default function Login() {
   const setLogin =useSetRecoilState(isRefresh)
   useEffect(() => {
     let data = JSON.parse(localStorage.getItem("userData"));
-
     setUserList(data);
   }, []);
+  
   function handleLogin() {
     if (email === "" || password === "") {
       alert("FIll the form first");

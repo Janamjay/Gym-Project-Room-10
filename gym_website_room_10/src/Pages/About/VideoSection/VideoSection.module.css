@@ -51,10 +51,11 @@
     font-size: 2rem;
     margin-bottom: 3rem;
   }
-  .video_section iframe{
+  .video_section iframe {
     width: 99%;
   }
 }
+
 /* ================================Mobile View============================ */
 
 @media (max-width: 500px) {

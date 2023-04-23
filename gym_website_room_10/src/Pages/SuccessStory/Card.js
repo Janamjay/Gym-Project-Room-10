@@ -3,7 +3,6 @@ import Styles from "./Card.module.css";
 import { FiPlay } from "react-icons/fi";
 import mary from "../../component/images/img1.png";
 import Background from "../../component/backround/Background";
-
 import success from "../../component/images/succes.jpg";
 import { useRecoilValue } from "recoil";
 import { isRefresh } from "../../Recoil";
@@ -17,7 +16,7 @@ export default function Card() {
     if (!Login) {
       nav("/");
     }
-  }, []);
+  });
 
   const Data = [
     {

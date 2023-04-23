@@ -179,31 +179,6 @@
   width: 100%;
 }}
 
-@media (max-width: 900px) {
-  .container {
-    margin: 10px;
-    width: 92%;
-    padding-left: 5.9rem;
-  }
-  .card_title h3 {
-    font-size: 4rem;
-  }
-  .image img {
-    width: 100%;
-  }
-  .story {
-    display: block;
-    width: 50%;
-    font-size: 30px;
-    margin: auto;
-  }
-  .image img {
-    width: 100%;
-  }
-  .mainBody {
-    width: 100vw;
-  }
-}
 
 @media (max-width: 500px) {
 
@@ -224,7 +199,6 @@
 
   .image img {
     width: 100%;
-
     margin-left: 0rem;
   }
 

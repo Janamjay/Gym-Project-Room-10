@@ -3,8 +3,6 @@ import {
   Routes,
   Route,
   useLocation,
-  IndexRouteObject,
-  useNavigate,
 } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";

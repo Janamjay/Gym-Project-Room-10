@@ -16,7 +16,7 @@ export default function Home() {
   console.log();
   useEffect(()=>{
  if(!Login){
-   nav ("/home")
+   nav ("/")
  }
  },[])
 

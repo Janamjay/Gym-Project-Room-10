@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import CustomInput from "../../atom/customInputs/CustomInput";
-import CustomButton from "../../atom/customButtons/CustomButton";
+import CustomInput from "../../custom/customInputs/CustomInput";
+import CustomButton from "../../custom/customButtons/CustomButton";
 import style from "./Login.module.css";
 import { Link , useNavigate } from "react-router-dom";
-import Background from "../../backround/Background";
-import signup from "../../images/signup.jpg";
+import sign from "../../images/signup.jpg";
 
 export default function SignUp() {
   const [email, setEmail] = useState("");
@@ -58,14 +57,14 @@ export default function SignUp() {
  
 
   return (
-    <>
-      <Background
-        url={signup}
-        heading="SIGNUP PAGE"
-        desc="SIGNUP WITH US CONNECT TO US"
-      />
+    <div className={style.main_container}>
+      <img src={sign} alt="logImage" />
+      <div className={style.heading}>
+        <h1>SignUp PAGE</h1>
+        <p>Join with us to be Fit</p>
+      </div>
       <div className={style.wrap}>
-        <h3>Signup Page</h3>
+        <h3>Signup</h3>
         <CustomInput
           className={style.email}
           type="email"
@@ -96,6 +95,6 @@ export default function SignUp() {
           Already registered? <Link to="/">Login</Link>
         </p>
       </div>
-    </>
+    </div>
   );
 }

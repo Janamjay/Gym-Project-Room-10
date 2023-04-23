@@ -1,6 +1,9 @@
 import React from 'react'
 import bg from './back.module.css'
-import CustomButton from "../atom/customButtons/CustomButton";
+
+import CustomButton from "../custom/customButtons/CustomButton";
+import { Link } from 'react-router-dom';
+
 
 
 export default function Background(props) {
@@ -13,7 +16,7 @@ export default function Background(props) {
         <h1>{props.heading}</h1>
         <p>{props.desc}</p>
         <p>
-          <CustomButton btntxt="Select Your Plan" style={bg.btnselect} />
+          <Link to="/price"><CustomButton btntxt="Select Your Plan" style={bg.btnselect} /></Link>
         </p>
       </div>
     </div>

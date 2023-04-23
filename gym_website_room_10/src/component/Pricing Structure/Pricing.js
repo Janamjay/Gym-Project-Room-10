@@ -3,10 +3,18 @@ import { BsCalendarCheck } from "react-icons/bs";
 import { RiUser3Line } from "react-icons/ri";
 import { ImFileVideo, ImNewspaper } from "react-icons/im";
 import paisa from "./Pricing.module.css";
-import { Link } from "react-router-dom";
-import CustomButton from "../atom/customButtons/CustomButton";
+import CustomButton from "../custom/customButtons/CustomButton";
 
 export default function Pricing() {
+
+  function handleJoin(){
+    if (window.confirm("Are you want to purchase the plan") === true) {
+     alert("Plan Successfully added")
+    } else {
+     alert("You cancelled the plan")
+    }
+  }
+
   return (
     <div className={paisa.pricechart}>
       <div className={paisa.pricesection}>
@@ -62,7 +70,7 @@ export default function Pricing() {
               Plans
             </span>
           </p>
-          <Link to="/"><CustomButton btntxt="Buy Now" style={paisa.btnselect} /></Link>
+           <CustomButton btntxt="Buy Now" style={paisa.btnselect} onClick={handleJoin}/>
         </div>
         <div className={paisa.plan}>
           <p>1-month pre-pay plan</p>

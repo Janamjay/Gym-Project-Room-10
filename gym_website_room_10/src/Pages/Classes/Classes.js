@@ -15,31 +15,31 @@ export default function Classes() {
     if(!Login){
       nav ("/")
     }
-   },[])
+   })
   const data = [
     {
       id: "1",
       title: "Power Lifting",
       name: "Yarian Yate",
-      time: "Friday 10:00 AM",
+      time: "Monday 10:00 AM",
     },
     {
       id: "2",
       title: "Power Lifting",
       name: "pranav",
-      time: "Friday 10:00 AM",
+      time: " Tuesday 10:00 AM",
     },
     {
       id: "3",
       title: "Power Lifting",
       name: "karan",
-      time: "Friday 10:00 AM",
+      time: "Wednesday 10:00 AM",
     },
     {
       id: "4",
       title: "Power Lifting",
-      name: "karan",
-      time: "Friday 10:00 AM",
+      name: "Jay",
+      time: "Thursday 10:00 AM",
     },
  
   ];
@@ -57,9 +57,9 @@ export default function Classes() {
         <p>Find the class timetable for your local club or find out when and where you can do a specific class.</p>
         </div>
       <div className={styles.container}>
-        {data.map((item) => {
+        {data.map((item,id) => {
           return (
-            <div key={item} className={styles.card}>
+            <div key={id} className={styles.card}>
               <div className={styles.card_title}></div>
               <div className={styles.card_body}>
                 <h4>{item.title}</h4>

@@ -22,7 +22,7 @@ export default function Conslutant() {
             Fitness <span>Trainer</span>
           </h1>
           <p>
-            For more information on <br /> fitness programs call or text <br />{" "}
+            For more information on <br /> fitness programs call or text <br />
             us at <strong>568-898-8977</strong>
           </p>
           <h2>

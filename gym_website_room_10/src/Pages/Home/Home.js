@@ -6,6 +6,7 @@ import BMI from './bmi/BMI';
 import Expert from './expert/Expert';
 import Price from './price/Price';
 import Clientstories from './client stories/Clientstories';
+
 import { useRecoilValue } from 'recoil';
 import { isRefresh } from '../../Recoil';
 import { useNavigate } from 'react-router-dom';
@@ -19,6 +20,7 @@ export default function Home() {
    nav ("/")
  }
  },[])
+
 
 
 

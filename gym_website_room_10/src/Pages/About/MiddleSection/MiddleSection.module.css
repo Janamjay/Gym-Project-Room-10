@@ -80,9 +80,11 @@
 
 /* =============Mobile View================ */
 
+
 @media (max-width:500) {
   .main_container{
     display: block;
+
   }
   
   .left_section{

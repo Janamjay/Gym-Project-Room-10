@@ -26,6 +26,7 @@ export default function Login() {
     if (email === "" || password === "") {
       alert("FIll the form first");
     } else if (userList !== null) {
+
       const userFind = userList.find(
         (x) =>
           (x.email === email || x.email === "") &&

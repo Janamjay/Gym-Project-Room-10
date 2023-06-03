@@ -22,7 +22,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" Component={Login}></Route>
+        <Route path="/" Component={Login}/>
         <Route path="/about" Component={About} />
         <Route path="/contact" Component={Contact} />
         <Route path="/home" Component={Home} />

@@ -14,27 +14,27 @@ export default function Expert() {
         </h1>
      
       <div className={team.row}>
-        <div class={team.trainer_col}>
+        <div className={team.trainer_col}>
           <img src={tr1} alt="trainer1" />
-          <div class={team.layer}>
+          <div className={team.layer}>
             <h2>Daizy</h2>
           </div>
         </div>
-        <div class={team.trainer_col}>
+        <div className={team.trainer_col}>
           <img src={tr2} alt="trainer2" />
-          <div class={team.layer}>
+          <div className={team.layer}>
             <h2>Sam</h2>
           </div>
         </div>
-        <div class={team.trainer_col}>
+        <div className={team.trainer_col}>
           <img src={tr3} alt="trainer3" />
-          <div class={team.layer}>
+          <div className={team.layer}>
             <h2>Adam</h2>
           </div>
         </div>
-        <div class={team.trainer_col}>
+        <div className={team.trainer_col}>
           <img src={tr4} alt="trainer1" />
-          <div class={team.layer}>
+          <div className={team.layer}>
             <h2>Mark</h2>
           </div>
         </div>

@@ -35,7 +35,7 @@
   display: grid;
   cursor: pointer;
 }
-.footer_social li:hover {
+.footer_social a:hover {
   color: red;
 }
 .footer_box h4 {

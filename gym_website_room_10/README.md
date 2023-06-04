@@ -44,9 +44,9 @@ npm start
 
  ## Collebrators
   - Samruddhi kshirsagar   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    ```  fn-nob-52UCE ```
-  - Janamjay Kumar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ``` fn-nob-52UCE ```
+  - Janamjay Kumar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ```fn-nob-95CTX```
   - Mohammad Faizan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ``` fn-nob-57AXK ```
-  - Maneesha Kumari &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``` fn-nob-71POJ ```
+  - Maneesha Kumari &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;``` fn-nob-28MGD ```
   
 
 

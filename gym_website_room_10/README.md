@@ -1,3 +1,6 @@
+<img width="900" alt="gym" src="https://github.com/Janamjay/Gym-Website-Project-Room-10/assets/95991117/8c793cf1-77b0-467c-948f-d7e5b52ed2ff">
+
+
 # GYM-Website Project
 
 This is a repository for a gym website project developed by Janamjay Kumar, Samruddhi Kshirsagar, Maneesha Kumari, and Mohammad Faizan. The project is built using React.js and includes login and signup pages for users.
